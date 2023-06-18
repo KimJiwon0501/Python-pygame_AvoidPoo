@@ -171,7 +171,7 @@ while True:
             Umbrella.y = Player.y - 37
 
 
-        if random.randint(1, 800) == 1:
+        if random.randint(1, 1000) == random.randint(1, 1000):
             Fall_Umbrella = obj()
             Fall_Umbrella.put_img("img/Umbrella_Right.png")
             Fall_Umbrella.change_size(60, 32)
@@ -237,7 +237,7 @@ while True:
             if time <= 0:
                 Umbrella_show = False
             text = font.render("Time :  {0}".format(time), True, (150, 75, 0))
-            screen.blit(text, (300, 5))
+            screen.blit(text, (350, 5))
 
         pygame.display.flip()
         
